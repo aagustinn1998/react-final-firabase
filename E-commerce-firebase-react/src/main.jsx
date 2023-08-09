@@ -1,10 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { UserContextProvider } from "./contexts/userContext";
+import { CarritoContextProvider } from "./contexts/carritoContext";
+import "./index.css";
+import App from "./App";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+ReactDOM.render(
+  <UserContextProvider>
+    <CarritoContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </CarritoContextProvider>
+  </UserContextProvider>,
+  document.getElementById("root")
+);
