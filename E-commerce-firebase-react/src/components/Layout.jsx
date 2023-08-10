@@ -11,7 +11,7 @@ function Layout({ children }) {
         <nav className="w-full flex items-center justify-between px-10 py-5">
           <Link to="/" className="font-bold italic text-3xl">
             {" "}
-            LasfiStore
+            MOST
           </Link>
           <input
             className="bg-white rounded-md border-0 w-1/3  px-5 py-2 text-black"
@@ -37,7 +37,7 @@ function Layout({ children }) {
       </main>
       <footer className="mt-10 bg-black text-white py-5 px-10 w-full">
         <div className="w-full h-full flex items-center justify-center">
-          <span className="text-bold text-xl"> LasfiStore</span>
+          <span className="text-bold text-xl"> MOST</span>
         </div>
       </footer>
     </div>
